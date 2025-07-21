@@ -10,18 +10,37 @@
     <h1>Armazenamento Local</h1>
     <p>Este exemplo demonstra como armazenar dados no armazenamento local do navegador.</p>
 
-    <div>
-        <button onclick="armazenaNovodado()">Armazena um novo dado com localstorage</button>
-    </div>
+    <div class="container">
+        <!--
+            This section contains a button that, when clicked, triggers the `armazenaNovodado()` function.
+        -->
+        <div>
+            <button onclick="armazenaNovodado()">Armazena um novo dado com localstorage</button>
+        </div>
 
-    <div>
-        <button onclick="armazenaSegundoDado()">Armazena dado com sessionstorage</button>
-    </div>
+        <!--
+            This section contains a button that, when clicked, triggers the `armazenaSegundoDado()` function.
+        -->
+        <div>
+            <button onclick="armazenaSegundoDado()">Armazena dado com sessionstorage</button>
+        </div>
 
-    <div>
-        <button onclick="imprimirDadosArmazenados()">Imprimir dados armazenados</button>
-    </div>
+        <!--
+            This section contains a button that, when clicked, triggers the JavaScript function 'imprimirDadosArmazenados'.
+        -->
+        <div>
+            <button onclick="imprimirDadosArmazenados()">Imprimir dados armazenados</button>
+        </div>
 
+        <!--
+            This <div> element with the id "output" serves as a container for dynamically generated content.
+        -->
+        <div id="output"></div>
+
+        </div>
+    <!--
+        This script tag includes the JavaScript file 'salvamentolocal.js' from the parent directory's 'js' folder.
+    -->
     <script src="../js/salvamentolocal.js"></script>
 
 </body>
